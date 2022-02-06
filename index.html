@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Nombre de sitio | Home</title>
+    <!---
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    ---->
+
+    <!--Core CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link id="theme-sheet" rel="stylesheet" href="assets/css/core.css" />
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .navbar-wrapper .navbar-brand img {
+        height: auto;
+      }
+      .navbar-item img {
+        max-height: 100% !important;
+      }
+      .navbar-wrapper.navbar-faded .navbar-brand img {
+        height: auto !important;
+      }
+      ::selection{
+          background: lightblue;
+      }
+      /*First card*/
+      body.is-theme-core .hover-cards .icon-card-hover.first-card {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.65)), to(rgba(255, 255, 255, 0.65))),url(./assets/img/perfil-1.svg);
+          background-image: linear-gradient(
+      180deg
+      , rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),url(../img/perfil-1.svg) !;
+      }
+      body.is-theme-core .hover-cards .icon-card-hover.first-card:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)),url(./assets/img/perfil-1.svg);
+          background-image: linear-gradient(
+      180deg
+      , transparent, transparent),url(./assets/img/perfil-1.svg);
+      }
+      /*Second card*/
+      body.is-theme-core .hover-cards .icon-card-hover.second-card {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.65)), to(rgba(255, 255, 255, 0.65))),url(./assets/img/perfil-2.svg);
+          background-image: linear-gradient(
+      180deg
+      , rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),url(./assets/img/perfil-2.svg) !;
+      }
+      body.is-theme-core .hover-cards .icon-card-hover.second-card:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)),url(./assets/img/perfil-2.svg);
+          background-image: linear-gradient(
+      180deg
+      , transparent, transparent),url(./assets/img/perfil-2.svg);
+      }
+      /*Third card*/
+      body.is-theme-core .hover-cards .icon-card-hover.third-card {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.65)), to(rgba(255, 255, 255, 0.65))),url(./assets/img/perfil-3.svg);
+          background-image: linear-gradient(
+      180deg
+      , rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),url(./assets/img/perfil-3.svg) !;
+      }
+      body.is-theme-core .hover-cards .icon-card-hover.third-card:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)),url(./assets/img/perfil-3.svg);
+          background-image: linear-gradient(
+      180deg
+      , transparent, transparent),url(./assets/img/perfil-3.svg);
+      }
+      /*Fourth card*/
+      body.is-theme-core .hover-cards .icon-card-hover.fourth-card {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.65)), to(rgba(255, 255, 255, 0.65))),url(./assets/img/perfil-4.svg);
+          background-image: linear-gradient(
+      180deg
+      , rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),url(./assets/img/perfil-4.svg) !;
+      }
+      body.is-theme-core .hover-cards .icon-card-hover.fourth-card:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)),url(./assets/img/perfil-4.svg);
+          background-image: linear-gradient(
+      180deg
+      , transparent, transparent),url(./assets/img/perfil-4.svg);
+      }
+
+
+      .faq-wrapper .faq-block .block-header .header-icon {
+        background: #4A90E2;
+      }
+      .button.primary-btn {
+          border-color: #4A90E2;
+          background-color: #4A90E2;
+      }
+      .button.primary-btn.btn-outlined {
+          border-color: #4A90E2;
+          color: #4A90E2;
+      }
+      .button.primary-btn.btn-outlined:hover {
+          background-color: #4A90E2;
+      }
+      .button.primary-btn.raised:hover {
+          -webkit-box-shadow: 0 14px 26px -12px rgba(35, 89, 213, 0.42), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(140 140 249 / 20%) !important;
+          box-shadow: 0 14px 26px -12px rgb(35, 89, 213, 0.42), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(140 140 249 / 20%) !important;
+          opacity: .9 .5;
+      }
+      .update-pill .inner-tag {
+        background: #4A90E2;
+        color: #fff;
+      }
+      .title-divider {
+          background: #4A90E2 !important;
+      }
+      .section .icon-subtitle i {
+          font-size: 2.4rem;
+          color: #4A90E2;
+      }
+      .process-wrap .process-block .process-icon {
+          background: #e0ecff;
+      }
+      a {
+          color: #155f83;
+          cursor: pointer;
+          text-decoration: none;
+      }
+
+      /*Modal BG*/
+      .modal.is-active .modal-background {
+        background: linear-gradient(
+        45deg
+        , #4A90E2 0%, #bac8e0 100%);
+            background-color: #8c8cf9;
+            width: 1000px
+        px
+        ;
+            height: 1000px;
+            border-radius: 10000px;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 98 !important;
+            overflow: hidden !important;
+        }
+
+    </style>
+  </head>
+
+  <body class="is-theme-core">
+    <div class="hero product-hero is-fullheight is-relative">
+      <nav
+        class="navbar navbar-wrapper navbar-default navbar-fade is-transparent"
+      >
+        <div class="container">
+          <!-- Brand -->
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img
+                width="160px"
+                class="switcher-logo"
+                src="./logo.svg"
+                alt=""
+              />
+            </a>
+
+            <!-- Responsive toggle -->
+            <div class="custom-burger" data-target="">
+              <a id="" class="responsive-btn" href="javascript:void(0);">
+                <span class="menu-toggle">
+                  <span class="icon-box-toggle">
+                    <span class="rotate">
+                      <i class="icon-line-top"></i>
+                      <i class="icon-line-center"></i>
+                      <i class="icon-line-bottom"></i>
+                    </span>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <!-- /Responsive toggle -->
+          </div>
+
+          <!-- Navbar menu -->
+          <div class="navbar-menu">
+
+            <!----
+            <div class="navbar-start">
+
+              <a class="navbar-item is-slide" href="kit1-features.html">
+                Features
+              </a>
+
+              <a class="navbar-item is-slide" href="kit1-pricing.html">
+                Pricing
+              </a>
+
+              <a class="navbar-item is-slide" href="kit1-login.html"> Login </a>
+          
+            </div>
+            ---->
+
+            <!-- Navbar end -->
+            <div class="navbar-end">
+
+              <a class="navbar-item is-slide" href="#proceso">
+                Nuestro proceso
+              </a>
+
+              <a class="navbar-item is-slide" href="#perfiles">
+                Para quien
+              </a>
+
+              <a class="navbar-item is-slide" href="#preguntasFrecuentes">
+                Preguntas frecuentes
+              </a>
+              <!-- Signup button -->
+              <div class="navbar-item">
+                <a class="button button-cta btn-outlined is-bold btn-align primary-btn raised modal-trigger" data-modal="horizontal-form-modal">
+                  Registro
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero image -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-vcentered">
+            <div class="column is-5 signup-column has-text-left">
+              <!--Update Pill-->
+              <div class="update-pill">
+                <span class="inner-tag">Versión 1.0</span>
+                <span class="inner-text">[Nombre]</span>
+              </div>
+
+              <h1 class="title is-1">
+                Consigue tu primer trabajo sin tener que salir de casa
+              </h1>
+              <br />
+              <h2 class="subtitle is-5 no-margin-bottom body-color">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos magnam quidem excepturi rerum aut voluptates quod non velit dolores, quia, itaque reprehenderit perferendis. Delectus itaque quas quasi et ullam doloremque!
+              </h2>
+              <br />
+              <!-- Signup form -->
+              <div class="signup-block is-rounded">
+                <form>
+                  <div class="control">
+                    <input
+                      type="email"
+                      class="input"
+                      placeholder="Email"
+                    />
+                    <button
+                      type="submit"
+                      class="button btn-align primary-btn raised"
+                    >
+                      Registro
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="column is-6 is-offset-1">
+              <!-- Hero composition -->
+              <div class="hero-image-composition-3">
+                <div class="image-wrap">
+                  <img
+                    class="inner-image"
+                    src="./photo-3.png"
+                    alt=""
+                  />
+                  <img
+                    class="inner-image-second"
+                    src="./photo-1.png"
+                    data-demo-src="assets/img/demo/hero/5.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="inner-image-third"
+                    src="./photo-2.png"
+                    data-demo-src="assets/img/demo/hero/2.jpg"
+                    alt=""
+                  />
+                  <!--Floating disks-->
+                  <div class="floating-dot dot-1"></div>
+                  <div class="floating-dot dot-2"></div>
+                  <div class="floating-dot dot-3"></div>
+                  <div class="floating-dot dot-4"></div>
+                  <div class="floating-dot dot-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Intro -->
+      <div class="section is-medium is-relative section-feature-grey">
+        <div class="container">
+          <!-- Title -->
+          <div class="section-title-wrapper has-text-centered">
+            <!--<div class="bg-number">6</div>--->
+            <h2 class="section-title-landing">Alineado a tus necesidades</h2>
+            <h4>Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum inermis iudicabit.</h4>
+          </div>
+
+          <div class="content-wrapper">
+            <div class="columns is-vcentered">
+              <div class="column is-4 has-text-centered">
+                <h3 class="is-3 small-feature">Medio tiempo</h3>
+                <p class="mb-20 is-tablet-padded body-color">
+                  Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit.
+                </p>
+                <div class="feature-sm">
+                  <img
+                    class="is-card-reveal"
+                    src="https://unsplash.it/640/425?random"
+                    data-base-url="assets/img/graphics/widgets/mini-widget-6"
+                    data-extension=".png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <h3 class="is-3 small-feature">Remoto</h3>
+                <p class="mb-20 is-tablet-padded body-color">
+                  Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit.
+                </p>
+                <div class="feature-sm">
+                  <img
+                    class="is-card-reveal"
+                    src="https://unsplash.it/640/425?random"
+                    data-base-url="assets/img/graphics/widgets/mini-widget-5"
+                    data-extension=".png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <h3 class="is-3 small-feature">Ajustado a tus horarios</h3>
+                <p class="mb-20 is-tablet-padded body-color">
+                  Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit.
+                </p>
+                <div class="feature-sm">
+                  <img
+                    class="is-card-reveal"
+                    src="https://unsplash.it/640/425?random"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Feature -->
+    <div class="section">
+        <div class="container">
+            <div class="hero is-fullheight">
+              <div class="hero-body">
+                <div class="columns is-vcentered">
+                  <div class="column is-4 is-offset-1">
+                      <div class="title quick-feature is-handwritten text-bold">
+                          <h2>Aqui es donde comentamos que es trabajo con pymes/ dinamica PYMES-ESTUDIANTES</h2>
+                      </div>
+                      <span class="body-text"
+                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet periculis
+                ut. Vis in probo decore labitur.</span>
+                  </div>
+  
+                  <div class="column is-6 is-offset-1 has-text-centered">
+                      <img class="featured-svg" src="https://unsplash.it/640/425?random" data-base-url="assets/img/graphics/widgets/mini-widget-2" data-extension=".png" alt="" />
+                  </div>
+              </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature -->
+    <span id="proceso"></span>
+    <div class="section section-feature-grey">
+        <div class="container">
+            <div class="columns is-vcentered">
+              <!-- With the help of responsive modifiers, the text column is duplicated to ensure better readability both on desktop and mobile viewports -->
+              <div
+                  class="column is-4 is-offset-1 is-hidden-desktop is-hidden-tablet"
+              >
+                  <div class="title quick-feature is-handwritten text-bold">
+                  <h2>Proceso</h2>
+                  <!--<div class="bg-number">1</div>-->
+                  </div>
+                  <span class="body-text"
+                  >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                  periculis ut. Vis in probo decore labitur.</span
+                  >
+              </div>
+      
+              <div class="column is-6 has-text-centered">
+                  <img
+                  class="featured-svg"
+                  src="https://unsplash.it/640/425?random"
+                  data-base-url="assets/img/graphics/widgets/mini-widget-1"
+                  data-extension=".png"
+                  alt=""
+                  />
+              </div>
+      
+              <div class="column is-4 is-offset-1 is-hidden-mobile">
+                  <div class="title quick-feature is-handwritten text-bold">
+                  <h2>Proceso</h2>
+                  <!--<div class="bg-number">1</div>-->
+                  </div>
+                  <span class="body-text"
+                  >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                  periculis ut. Vis in probo decore labitur.</span
+                  >
+              </div>
+            </div>
+
+
+                <!-- Process section -->
+                <div class="section">
+                  <div class="container">
+                      <!-- Wrapper -->
+                      <div class="process-wrap">
+                          <!-- Process step -->
+                          <div class="process-block has-text-centered">
+                              <div class="process-icon">
+                                  <img src="assets/img/graphics/icons/study-core.svg" data-base-url="assets/img/graphics/icons/study" data-extension=".svg" alt="" />
+                              </div>
+                              <div class="text-block">
+                                  <h4 class="title is-5 no-margin">Registro a la plataforma</h4>
+                                  <p>
+                                      Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                                      inermis iudicabit.
+                                  </p>
+                              </div>
+                          </div>
+                          <!-- Process step -->
+                          <div class="process-block has-text-centered">
+                              <div class="process-icon">
+                                  <img src="assets/img/graphics/icons/learn-core.svg" data-base-url="assets/img/graphics/icons/learn" data-extension=".svg" alt="" />
+                              </div>
+                              <div class="text-block">
+                                  <h4 class="title is-5 no-margin">Vinculación con empresa</h4>
+                                  <p>
+                                      Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                                      inermis iudicabit.
+                                  </p>
+                              </div>
+                          </div>
+                          <!-- Process step -->
+                          <div class="process-block has-text-centered">
+                              <div class="process-icon">
+                                  <img src="assets/img/graphics/icons/aquire-core.svg" data-base-url="assets/img/graphics/icons/aquire" data-extension=".svg" alt="" />
+                              </div>
+                              <div class="text-block">
+                                  <h4 class="title is-5 no-margin">Oferta laboral</h4>
+                                  <p>
+                                      Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                                      inermis iudicabit.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+        </div>
+    </div>
+    
+
+    <!-- Services -->
+    <span id="perfiles"></span>
+    <div class="section is-app-grey">
+        <div class="container">
+            <!-- Title -->
+            <div class="section-title-wrapper has-text-centered pt-40 pb-40">
+                <h2 class="section-title-landing">Perfiles de empleo</h2>
+                <h4>Lorem ipsum</h4>
+            </div>
+
+            <div class="content-wrapper hover-cards">
+                <!-- Hover boxes -->
+                <div class="columns is-vcentered">
+                    <div class="column is-10 is-offset-1">
+                        <div class="columns is-vcentered">
+                            <div class="column is-6">
+                                <!-- Hover box -->
+                                <div class="flex-card icon-card-hover first-card light-bordered">
+                                    <h3 class="card-title is-clean">Perfil 1</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
+                                <!-- Hover box -->
+                                <div class="flex-card icon-card-hover second-card light-bordered">
+                                    <h3 class="card-title is-clean">Perfil 2</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <!-- Hover box -->
+                                <div class="flex-card icon-card-hover third-card light-bordered">
+                                    <h3 class="card-title is-clean">Perfil 3</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
+                                <!-- Hover box -->
+                                <div class="flex-card icon-card-hover fourth-card light-bordered">
+                                    <h3 class="card-title is-clean">Perfil 4</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FAQ-->
+    <span id="preguntasFrecuentes"></span>
+    <div class="section">
+        <div class="container">
+            <!-- Title -->
+            <div class="section-title-wrapper has-text-centered pt-40 pb-40">
+                <h2 class="section-title-landing">Preguntas frecuentes</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+            </div>
+
+            <div class="faq-wrapper">
+                <div class="columns">
+                    <div class="column is-5 is-offset-1">
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-5">
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                        <!--Faq Block-->
+                        <div class="faq-block">
+                            <div class="block-header">
+                                <div class="header-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h3>Pregunta?</h3>
+                            </div>
+                            <div class="block-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
+                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
+                                    constructio interrete. Aliter homines, aliter philosophos loqui
+                                    putas oportere?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <div class="section is-medium is-relative section-feature-grey">
+      <div class="container">
+        <div class="section-title-wrapper has-text-centered">
+          <h2 class="section-title-landing">Registrate a nuestra plataforma</h2>
+          <h4>
+            Explicamos que es para la version 1.0
+          </h4>
+        </div>
+
+        <div class="content-wrapper giant-pb">
+          <form>
+            <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <div class="columns is-vcentered has-text-centered">
+                  <div class="column">
+                    <a class="button button-cta btn-outlined is-bold btn-align primary-btn raised modal-trigger" data-modal="horizontal-form-modal">
+                      Únete
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dark footer -->
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-vcentered">
+
+          <div class="column is-3 has-text-centered">
+            <img src="./logo.svg" alt="">
+            <p>Nombre de empresa &copy; 2022</p>
+          </div>
+
+          <div class="column is-offset-2">
+            <h2 class="title is-4">Nombre empresa</h2>
+            <ul>
+              <li class="mt-20"><a href="#proceso">Proceso</a></li>
+              <li class="mt-20"><a href="#perfiles">Perfiles</a></li>
+              <li class="mt-20"><a href="#preguntasFrecuentes">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-4">Información</h2>
+            <ul>
+              <li class="mt-20"><a href="#">Contacto</a></li>
+              <li class="mt-20"><a href="#">Politica de privacidad</a></li>
+              <li class="mt-20"><a href="#">Aviso de privacidad</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <hr />
+      </div>
+    </footer>
+    <!-- /Dark footer -->
+    
+    <!-- Modal Markup -->
+    <div id="horizontal-form-modal" class="modal modal-lg">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="flex-card simple-shadow">
+                <div class="card-body">
+                    <h2 class="title is-4 text-bold mb-40">Registro (Obviamente ver qué datos son los más importantes, tampoco tan básico)</h2>
+                    <p>La otra es que llenen el formulario con sus datos sencillos y nosotros nos ponemos en contacto con ellos para corroborar datos</p>
+                    <form>
+                        <div class="columns mt-40">
+                            <div class="column">
+                                <div class="control">
+                                    <label>Nombre Completo</label>
+                                    <input class="input is-medium" type="text">
+                                </div>
+                                <div class="control mt-20">
+                                    <label>Carrera</label>
+                                    <input class="input is-medium" type="text">
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="control">
+                                    <label>Universidad</label>
+                                    <input class="input is-medium" type="text">
+                                </div>
+                                <div class="control mt-20">
+                                    <label>Cuenta de RRSS que quieras compartir</label>
+                                    <input class="input is-medium" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="control">
+                                    <textarea class="textarea is-grow" rows="5" placeholder="Descripción general y objetivos de carrera ..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <button class="is-medium button btn-align primary-btn raised btn-align no-lh modal-dismiss">Crear</button>
+                            <button class="is-medium button is-link no-lh modal-dismiss">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large is-hidden" aria-label="close"></button>
+    </div>
+    <!-- /Modal Markup -->
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/core.js"></script>
+  </body>
+</html>
